@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        strong,
+        p {
+            font-size: 15px;
+            margin: 0;
+            /* font-weight: 600; */
+            line-height: 1.2;
+            color: #000;
+        }
+
+        .invoice-container {
+            max-width: 800px;
+            height: calc(100%);
+            margin: 0px auto;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .out-range {
+            border-bottom: 2px dashed #000 !important;
+        }
+        table{
+            border: 1px solid #00000059 !important;
+        }
+        th{
+            text-align: center;
+            font-weight: bold;
+            padding: 0 3px !important;
+        }
+        td{
+            padding: 3px !important;
+            height: 32px !important;
+        }
+        th,td{
+            vertical-align: middle;
+            font-size: 12px;
+        }
+
+        @page {
+            size: A4;
+        }
+
+        @media print {
+            .invoice-container{
+                max-width: 100%;
+            }
+            footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-container">
+
+        <header class="header text-center">
+            <div class="text-center">
+                <h1>Vital Chart</h1>
+            </div>
+            
+        </header>
+        <main class="">
+            <table class=" table table-bordered">
+                <thead>
+                    <tr>
+                        <th >Date</th>
+                        <th >Time</th>
+                        <th >RBS</th>
+                        <th >R / R</th>
+                        <th >HR</th>
+                        <th >BP</th>
+                        <th >Temp</th>
+                        <th >SPO2</th>
+                        <th >Remarks</th>
+                        <th >Name & <br/> Signature</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="text-nowrap">12-01-2025</td>
+                        <td>9230243</td>
+                        <td>9230</td>
+                        <td>92323</td>
+                        <td>923232</td>
+                        <td>92323223</td>
+                        <td>92323223</td>
+                        <td>9232322323</td>
+                        <td>9232322323</td>
+                        <td>9232322323</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </main>
+       
+    </div>
+
+
+
+    <script>
+        // Sample data from backend
+        const dataFromBackend = [
+            { date: "3/1/25", time: "11:30 AM", rbs: "18", rr: "83/min", hr: "115", bp: "115/85", temp: "99°F", spo2: "97%", remarks: "Preop", name: "Dr. A" },
+            { date: "3/1/25", time: "2:45 PM", rbs: "19", rr: "81/min", hr: "117", bp: "118/84", temp: "98.6°F", spo2: "96%", remarks: "Postop", name: "Dr. B" }
+        ];
+
+        const totalRowsPerPage = 25; // Total rows required to fill a page
+        const tbody = document.querySelector("tbody");
+
+        // Add data rows
+        dataFromBackend.forEach((row) => {
+            const tr = document.createElement("tr");
+            for (const key in row) {
+                const td = document.createElement("td");
+                td.textContent = row[key];
+                tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+        });
+
+        // Add empty rows to fill the table
+        const emptyRows = totalRowsPerPage - dataFromBackend.length;
+        for (let i = 0; i < emptyRows; i++) {
+            const tr = document.createElement("tr");
+            for (let j = 0; j < 10; j++) { // 10 columns in the table
+                const td = document.createElement("td");
+                td.textContent = ""; // Empty cell
+                tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+        }
+    </script>
+</body>
+
+</html>

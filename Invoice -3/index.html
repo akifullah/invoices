@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="invoice-container">
+
+        <header class="header">
+            <div class="logo ">
+                <img src="amc.jpg" alt="">
+            </div>
+        </header>
+        <main>
+
+            <div class="inv-detail row">
+
+                <div class="left-side col-5">
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">M.R #</p>
+                        <p class="w-50">A20383489</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Patient name</p>
+                        <p class="w-50">Name</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Age | Gender</p>
+                        <p class="w-50">5-Year | Male</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Invoice Date</p>
+                        <p class="w-50">30-Dec-2024</p>
+                    </div>
+                </div>
+
+                <div class="right-side col-5 ms-auto">
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Refered By</p>
+                        <p class="w-50">Out Patient Services</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Receipt #</p>
+                        <p class="w-50">A2412 - 439</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Patient Status</p>
+                        <p class="w-50">30-Dec-2024</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p class="w-50 fw-bold">Invoice Date</p>
+                        <p class="w-50">30-Dec-2024</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="text-center bar">
+                <h5 class="my-0 text-decoration-underline">HEMATOLOGY</h5>
+                <h5 class="my-0 border-0">CBC</h5>
+            </div>
+
+            <section class="items">
+                <table class="table table-bordered invoice-table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Test</th>
+                            <th class="text-center">Result</th>
+                            <th class="text-center">Unit</th>
+                            <th class="text-center">Reference Values</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WBC</td>
+                            <td class="text-center">9.6</td>
+                            <td class="text-center">10^9/L</td>
+                            <td class="text-center">3.50 - 10.00</td>
+                        </tr>
+                        <tr>
+                            <td>RBC</td>
+                            <td class="text-center">4.6</td>
+                            <td class="text-center">10^12/L</td>
+                            <td class="text-center">2.67 - 5.74</td>
+                        </tr>
+                        <tr>
+                            <td>HB</td>
+                            <td class="text-center fw-bold out-range">9.2</td>
+                            <td class="text-center">g/dl</td>
+                            <td class="text-center">11.6 - 14.6</td>
+                        </tr>
+                        <tr>
+                            <td>HCT</td>
+                            <td class="text-center">29.2</td>
+                            <td class="text-center">%</td>
+                            <td class="text-center">36.1 - 44.9</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer-note">
+                    <strong>Disclaimer:</strong> Every diagnostic test has scientific acceptable technology or
+                    technique-based
+                    limitations of uncertainty of measurement. False positive or false negative results may occur and do
+                    not
+                    fall under
+                    the domain of negligence.
+                </p>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="row mb-2">
+                <div class="col-5">
+                    <div class="d-flex">
+                        <p style="width: 130px;">Hospital Contact Number:</p>
+                        <p class="w-50">0938-451111 <br /> 0316-xxxxxxx</p>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div class="d-flex">
+                        <p style="width: 130px;">Hospital Address:</p>
+                        <p class="w-100">AMC, Opposite Waleed Filling Station, Gari Munara, District & Tehsil Swabi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <div class="d-flex">
+                        <p style="width: 130px;" class="fw-bold">Reported By</p>
+                        <p class="w-50">Ahmad Johar</p>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <div class="d-flex">
+                        <p style="width: 130px;" class="fw-bold">Print Date & Time:</p>
+                        <p class="w-100" id="print-date">30-Dec-2024 02:34 PM</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

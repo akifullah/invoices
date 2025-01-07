@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+strong,
+p {
+    font-size: 12px;
+    margin: 0;
+    /* font-weight: 600; */
+    line-height: 1.2;
+    color: #000;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th,
+td {
+    padding: 0 15px;
+    /* border: 1px solid #000; */
+    font-size: 14px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img {}
+
+.invoice-table th {
+    background-color: #B2BBC3;
+    font-weight: 600;
+    padding: 0 3px;
+}
+
+.text-blue {
+    color: rgb(0, 151, 211);
+}
+
+.text-red {
+    color: rgb(231, 12, 12);
+}
+
+body {
+    padding: 10px 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    padding-bottom: 300px;
+}
+
+.invoice-container {
+    max-width: 800px;
+    height: calc(100%);
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 5px;
+}
+
+
+
+.inv-detail .fw-bold {
+    font-weight: 600 !important;
+}
+
+.inv-detail p {
+    font-size: 12px;
+    color: #000 !important;
+    line-height: 1.4;
+}
+
+.invoice-details>div {
+    width: 50%;
+}
+
+.bar {
+    margin-top: 40px;
+}
+
+.bar h5:first-child {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.bar h5 {
+    border: 2px dashed grey;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.7;
+}
+
+
+.invoice-meta table tbody tr td:first-child {
+    background-color: #B2BBC3;
+    min-width: 120px;
+    font-weight: 600;
+}
+
+
+.text-center {
+    text-align: center !important;
+}
+
+.items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    border-color: gray;
+}
+
+
+.items table td {
+    text-align: left;
+    font-size: 14px;
+}
+
+.items table thead{
+    border-top: transparent;
+}
+
+.items table th,
+.items table td {
+    padding: 2px 10px;
+    border: none;
+    color: #000;
+    border-color: #B2BBC3 ;
+
+
+}
+
+.items table tbody tr td:nth-child(2) {
+    background-color: #B2BBC3;
+}
+
+
+
+.totals {
+    display: flex;
+    justify-content: end;
+}
+
+.totals table strong {
+    font-size: 14px !important;
+}
+
+.totals table td:first-child {
+    background-color: #B2BBC3;
+}
+
+.totals table td:last-child {
+    width: 110px;
+    font-weight: 600;
+}
+
+.totals-row {
+    margin: 5px 0;
+}
+
+.total-balance {
+    font-size: 18px;
+    color: #d00;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+.out-range {
+    border-bottom: 2px dashed #000 !important;
+}
+
+
+
+@page {
+    size: A4;
+}
+
+@media print {
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+
+    }
+
+
+    /* main {
+        margin-top: 120px;
+        margin-bottom: 00px;
+    } */
+
+    /* Page Numbers */
+    /* footer .page-number::after {
+        content: counter(page);
+    }
+
+    footer .total-pages::after {
+        content: counter(pages);
+    } */
+
+    /* Break content for multiple pages */
+    /* table,
+    .content {
+        page-break-inside: auto;
+    }
+
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    } */
+}
