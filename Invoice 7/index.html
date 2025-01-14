@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Certificate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Graduate&family=Roboto+Slab:wght@100..900&display=swap');
+
+        #circular-text {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: "Graduate", serif;
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 230px;
+            transform: translateX(-50%);
+        }
+
+
+        .main {
+            margin-top: 120px;
+        }
+
+        .birth {
+            font-family: "Graduate", serif;
+            font-weight: bold;
+            text-underline-offset: 7px;
+        }
+
+        .certify {
+            font-family: "Graduate", serif;
+            text-underline-offset: 7px;
+
+        }
+
+        @media print {
+            footer {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="circular-text">AKAKHEL MEDICAL COMPLEX</div>
+
+    <div class="logo">
+        <img src="./logo.png" alt="">
+    </div>
+
+
+
+    <div class="main">
+        <div class="">
+            <h2 class="text-center text-decoration-underline birth">BIRTH CERTIFICATE</h2>
+            <div class="row my-4">
+                <div class="col-3"><strong class="me-2">S.#:</strong> 3345</div>
+                <div class="col-3"><strong class="me-2">Referral #:</strong> 2134124</div>
+                <div class="col-3"><strong class="me-2">MR #:</strong> Name</div>
+                <div class="col-3"><strong class="me-2">Date & Time:</strong> 13-01-2025</div>
+            </div>
+        </div>
+
+        <div class="mt-5 pt-3">
+            <h3 class="text-center fw-bold certify text-decoration-underline">THIS IS CERTIFY THAT</h3>
+            <div class="row mt-4">
+                <div class="col-4 mb-4"><strong class="me-2">Birth Date:</strong> 01-01-2025 </div>
+                <div class="col-4 mb-4"><strong class="me-2">Birth Time:</strong> 01-01-2025</div>
+                <div class="col-4 mb-4"><strong class="me-2">Baby:</strong> Baby</div>
+                <div class="col-12 mb-4"><strong class="me-2">Name:</strong> Baby Name</div>
+
+                <div class="col-4 mb-4"><strong class="me-2">Gender:</strong> Male</div>
+                <div class="col-4 mb-4"><strong class="me-2">Mother Name:</strong> Mother Name</div>
+                <div class="col-4 mb-4"><strong class="me-2">Father Name:</strong> Father Name</div>
+                <div class="col-4 mb-4"><strong class="me-2">Mother/Father CNIC #:</strong> 194838348933</div>
+                <div class="col-4 mb-4"><strong class="me-2">Address:</strong> Addresss</div>
+                <div class="col-4 mb-4"><strong class="me-2">Date of Admission:</strong> 01-01-2025</div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row mt-5">
+            <div class="col-4"><strong class="me-2">Date of Discharge:</strong> </div>
+            <div class="col-4"></div>
+            <div class="col-4"><strong class="me-2">Doctor Sign/Stamp:</strong> </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 text-center"><strong class="me-2">Address:</strong> AMC, Opposite Waleed Filling Station,
+                Gari Munara, District & Tehsil Swabi</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+    <script>
+        new CircleType(document.getElementById("circular-text")).dir(1).radius(380);
+    </script>
+</body>
+
+</html>
