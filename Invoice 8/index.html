@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Certificate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Jameel Noori Nastaleeq Regular.ttf">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Graduate&family=Roboto+Slab:wght@100..900&display=swap');
+
+        @font-face {
+            font-family: 'CustomFont';
+            /* Name of the font */
+            src: url('Jameel Noori Nastaleeq Regular.ttf') format('truetype');
+            /* Path to the .ttf file */
+            font-weight: normal;
+            /* Optional: define font weight */
+            font-style: normal;
+            /* Optional: define font style */
+        }
+
+        body {
+            font-family: 'CustomFont', sans-serif;
+        }
+        
+
+        p {
+            white-space: nowrap;
+        }
+
+        .wrapper{
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+        .header {
+            margin: auto;
+            padding-right: 10px;
+        }
+
+        .header .logo {
+            transform: translateX(10px) translateY(10px);
+        }
+        .header .logo img{
+            margin-left: 5px;
+            margin-top: 5px;
+            height: 80px;
+        }
+        .header h2 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 0;
+            transform: translateY(10px);
+        }
+
+        .paitent {
+            margin-top: 70px;
+        }
+
+        .paitent p {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0px;
+            margin-left: 5px;
+            color: #000;
+
+        }
+
+        .paitent td,
+        .paitent {
+            border: none !important;
+        }
+
+        .paitent input {
+            box-shadow: 0;
+            border: 0;
+            border-bottom: 2px solid #000 !important;
+            border-radius: 0;
+            text-align: right;
+            padding-bottom: 0;
+        }
+
+        .cnic {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+
+        .cnic h4 {
+            font-size: 40px;
+        }
+
+        .cnic table {
+            border-color: #000 !important;
+        }
+
+        .cnic table td {
+            padding: 0;
+        }
+
+        .cnic table td input {
+            border: 0;
+            height: 40px;
+            width: 20px;
+            background-color: transparent;
+        }
+
+        .res p {
+            font-size: 22px;
+        }
+
+        .res h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .res input {
+            border: 0;
+            box-shadow: none !important;
+            border-bottom: 1px solid #000;
+            width: 200px;
+        }
+
+        .sign {
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        .sign .cards {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            border-color: #000 !important;
+        }
+
+        .sign .cards hr {
+            width: 80%;
+            margin: 0 auto;
+            color: #000 !important;
+            border-color: #000 !important;
+            background-color: #000 !important;
+        }
+
+        .sign .cards p {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+        }
+
+        .sign .cards .btm {
+            min-height: 20px;
+            border-color: #000 !important;
+            padding: 0 5px;
+        }
+
+        .sign .cards .card-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        footer {
+            border-bottom: 15px solid #333;
+            border-top: 5px solid #333;
+            position: relative;
+            padding: 5px 0;
+            /* bottom:10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 20px); */
+            position: relative;
+        }
+
+        footer h4 {
+            font-size: 26px;
+            font-weight: bolder;
+            font-family: 'CustomFont', sans-serif;
+            padding: 0 20px;
+        }
+
+        footer p {
+            font-size: 10px;
+            color: #000 !important;
+
+        }
+
+        footer a {
+            color: #000;
+        }
+
+        .ft-sign {
+            position: absolute;
+            right: 0;
+            bottom: calc(100% + 10px);
+        }
+
+        .ft-sign p {
+            padding-right: 10px;
+            font-size: 14px;
+            margin-bottom: 5px !important;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+            <div class="">
+                <h2 class="m-0">اکاخیل میڈیکل کمپلیکس</h2>
+            </div>
+        </div>
+
+        <div class="main px-4">
+            <table class="table  paitent">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="d-flex">
+                                <input type="text" class="form-control shadow-none" />
+                                <p>والد / شوہر</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex">
+                                <input type="text" class="form-control shadow-none" />
+                                <p>میں مسٹر / مسز</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="d-flex">
+                                <input type="text" class="form-control shadow-none" />
+                                <p>ساکن</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="d-flex">
+                                <p>اپنے مریض یا عزیز</p>
+                                <input type="text" class="form-control shadow-none" />
+                                <p>والد / زوجہ</p>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex">
+                                <input type="text" class="form-control shadow-none" />
+                                <p>کسی امراض</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex">
+                                <input type="text" class="form-control shadow-none" />
+                                <p>Muh</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex">
+                                <input type="text" class="form-control shadow-none" />
+                                <p>ساکن</p>
+
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!--  -->
+            <div class="cnic">
+                <h4>شناختی کارڈ نمبر</h4>
+                <table class="table table-bordered">
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="res d-flex align-items-center flex-column">
+                <p>میرا مکمل میڈیکل چیک اپ کرادیا گیا ہے۔ <input type="text" /> میرا یہاں کے اسٹاف کے ساتھ کوئی اختلاف
+                    نہیں ہے۔
+                </p>
+
+                <p>اور میرا کوئی قیمتی سامان اور کوئی قیمتی ٹیسٹ کے پیسے لگے ہیں، اور کسی کے لیے کسی دوائی کی کمی ہے۔
+                </p>
+
+                <h3>نوٹ: میرا اسپتال سے کسی قسم کی کوئی شکایت نہیں۔</h3>
+            </div>
+
+
+
+            <div class="d-flex align-items-center justify-content-between sign">
+                <div class="left-card cards border">
+                    <div class="card-text">
+
+                        <div class="text-center">
+                            <hr>
+                            <p>Patient / Attendant Sign and Thumb</p>
+                        </div>
+                        <div class="btm border-top text-start">
+                            <p class="mobile">Mobile No.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="left-card cards border">
+                    <div class="card-text">
+
+                        <div class="text-center">
+                            <hr>
+                            <p>Administration / Focal Person Sign & Stamp</p>
+                        </div>
+                        <div class="btm  text-start">
+                            <p class="mobile"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="row align-items-center">
+                <div class="col-8  ">
+                    <h4 class="my-0">اکاخیل میڈیکل کمپلیکس نزد ولید فلنگ سٹیشن گاڑمنارہ ضلع وتحصیل صوابی</h4>
+                </div>
+                <div class="col-4">
+                    <p class="my-0"><strong>Website: <a href="#">www.amch.org.pk</a></strong></p>
+                    <p class="my-0"><strong>Mob: 0938-481111 , 0318-8481111</strong></p>
+                    <p class="my-0"><strong>Email: Info@amch.org.pk</strong></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
